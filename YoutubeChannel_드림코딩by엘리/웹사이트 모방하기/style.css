@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration:  none;
+    color:lemonchiffon
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:darkslategray;
+    padding: 8px 15px;
+    padding-left: 100px;
+}
+
+.navbar_logo {
+    font-size: 30px;
+    color: lemonchiffon;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.navbar_logo i {
+    color: #d49466;
+
+}
+
+.navbar_menu    {
+    display: flex;
+    list-style:none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 2px 30px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.navbar_menu li:hover {
+    background-color: #d49466;
+}
+
+.navbar_icons  {
+    list-style: none;
+    display: flex;
+    color: lemonchiffon;
+   
+    padding-left: 0;
+    
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+    font-size: 30px;
+    color: #d49466;
+    padding: 8px 20px;
+    right: 30px;
+}
+
+.navbar_togglebtn {
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: lemonchiffon;
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        
+    }
+
+    
+
+    .navbar_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+        
+    }
+
+    .navbar_menu li {
+        
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .navbar_icons {
+        justify-content: center;
+        width: 100%;
+        display: none;
+        ;
+    }
+
+
+    .navbar_togglebtn {
+        display: block;
+    }
+
+    .navbar_menu.active, 
+    .navbar_icons.active {
+        display: flex;
+    }
+
+}
